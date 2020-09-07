@@ -31,7 +31,7 @@ Models used:
 3. Support Vector Machines
 
 The measure used to evaluate the models was the Mean Absolute Error.
-Results of the cross validatio scores:
+Results of the cross validation scores:
 1. Linear Regression = -170312869.96464953
 2. Random Forest Regression = -14.157836666666666
 3. Linear SVR = -31.758217518788545
