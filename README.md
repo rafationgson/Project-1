@@ -31,16 +31,20 @@ Models used:
 3. Support Vector Machines
 
 The measure used to evaluate the models was the Mean Absolute Error.
-Results of the cross validation scores:
-1. Linear Regression = -170312869.96464953
-2. Random Forest Regression = -14.157836666666666
-3. Linear SVR = -31.758217518788545
-4. SVR (kernel='rbf') = -17.54349943670496
+Results:
+| Model                   | Cross Val Score     |
+|-------------------------|---------------------|
+|Linear Regression        | 170312869.96464953  |
+|Random Forest Regression | 14.157836666666666  |
+|Linear SVR.              | -31.758217518788545 |
+|SVR (kernel='rbf')       | -17.54349943670496  |
 
 The Random Forest Regression performed the best with the lowest MAE, and so this model was fine tuned using a GridSearchCV.
 
 Test Predictions:
-Random Forest Regression = 14.604573170731708
+| Model                   | Prediction Test MAE |
+|-------------------------|---------------------|
+|Random Forest Regression | 14.604573170731708  |
 
 ### Findings:
 Since the average salary in the dataset has a fairly wide distribution and a standard deviation of 23.605836, the results of the Random Forest Regression also reflect that but it is still within the range and has a decent MAE.
